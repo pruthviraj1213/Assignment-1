@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="validation.js"></script>
+</head>
+
+<body bgcolor="lightgrey">
+<div class="form">
+        <h2>Signup Form</h2><br>
+        <form onsubmit='return formData()' id="Register">
+            <label>Full Name:</label>
+            <input id='firstname' type='text'>
+            <br>
+            <br>
+            <label>Username(6-8 characters):</label>
+            <input id='username' type='text' required><font color="red"> * </font>
+            <br>
+            <br>
+            <label>Email:</label>
+            <input id='email' type='text' required><font color="red"> * </font>
+            <br>
+            <br>
+            <label>State:</label>
+            <select id='state'>
+                <option selected hidden>
+                    Please Choose
+                </option>
+                <option>
+                    Gujarat
+                </option>
+                <option>
+                    Goa
+                </option>
+                <option>
+                    Punjab
+                </option>
+                <option>
+                    Maharastra
+                </option>
+            </select>
+            <br>
+            <br>
+            <label>Address:</label>
+            <input id='addr' type='text' maxlength="100">
+            <br>
+            <br>
+            <label>Zip Code:</label>
+            <input id='zip' type='text' maxlength="6">
+            <br>
+            <br>
+            <input id="submit" type='submit' value='Submit !'>
+        </form>
+    </div>
+</body>
+</html>
